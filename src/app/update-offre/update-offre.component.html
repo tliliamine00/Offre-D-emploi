@@ -1,0 +1,26 @@
+<div class="col-md-12">
+    <div class="col-md-6 offset-md-3">
+<p class="text-center">
+    <strong>Ajout d'un Offre</strong>
+</p></div></div>
+<form (ngSubmit)="onSubmit()"> 
+    <div class="col-md-12">
+        <div class="col-md-6 offset-md-3">
+             <div class="form_group">
+        <p class="text-center">
+
+        <label>Offre Description</label>
+        <input type="text" class="form-control" id="description"
+        [(ngModel)]="offre.description" name="description">
+    </div>
+
+    <div class="form_group">
+        <p class="text-center">
+            <label>Offre Type</label>
+        <input type="text" class="form-control" id="type"
+        [(ngModel)]="offre.type" name="type">
+    </div>
+
+    <button class="btn btn-success" type="submit">Update</button>
+        </div></div>
+</form>

@@ -1,0 +1,29 @@
+<div class="container">
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+    <table class="table table-striped">
+        
+            <tr> 
+                <th>id</th>
+                <th>description</th>
+                <th>type</th>
+                <th>Actions</th>
+                
+            </tr>
+        
+        <tbody>
+            <tr *ngFor = "let offre of offres" >
+                <td>{{offre.id}}</td>
+                <td>{{offre.description}}</td>
+                <td>{{offre.type}}</td>
+                <td>
+                    <button (click)="updateOffre(offre.id)" class="btn btn-info">Update</button>
+                </td>
+    
+            </tr>
+        </tbody>
+    </table>
+        </div>
+    </div>
+</div>
